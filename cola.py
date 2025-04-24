@@ -32,3 +32,12 @@ class Cola:
         self.longitud -= 1
         print("elemento eliminado:", valor)
         return valor
+    
+    def peek(self):
+        if self.is_empty():
+            print("La cola está vacía.")
+            return None
+        return self.frente.valor
+
+    def size(self):
+        return self.longitud
